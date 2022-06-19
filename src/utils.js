@@ -46,16 +46,16 @@ export const getSwingBlockVelocity = (engine, time) => {
       hard = 0
       break
     case successCount < 10:
-      hard = 1
+      hard = 0.5
       break
     case successCount < 20:
-      hard = 0.8
+      hard = 0.6
       break
     case successCount < 30:
       hard = 0.7
       break
     default:
-      hard = 0.74
+      hard = 0.75
       break
   }
   if (engine.getVariable(constant.hardMode)) {
